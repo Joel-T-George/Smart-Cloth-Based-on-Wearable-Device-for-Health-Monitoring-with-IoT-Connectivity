@@ -1,0 +1,26 @@
+{
+  "name": "smart_cloth_server",
+  "version": "0.1.0",
+  "description": "Smart Cloth for Health Monitoring with IoT Connectvitity and Node Socket server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joel-T-George/Smart-Cloth-for-Health-Monitoring-System-with-IoT-Connectivity.git"
+  },
+  "keywords": [
+    "Smart",
+    "Cloth",
+    "wearable",
+    "Devices"
+  ],
+  "author": "Joel-T-George",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joel-T-George/Smart-Cloth-for-Health-Monitoring-System-with-IoT-Connectivity/issues"
+  },
+  "homepage": "https://github.com/Joel-T-George/Smart-Cloth-for-Health-Monitoring-System-with-IoT-Connectivity#readme"
+}
