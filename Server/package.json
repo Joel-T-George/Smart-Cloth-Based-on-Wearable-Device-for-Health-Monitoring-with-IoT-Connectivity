@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://Smart-Cloth-Health-Monitoring-with-IoT-Connectvity-by-nodejs-server/issues"
   },
-  "homepage": "https://Smart-Cloth-Health-Monitoring-with-IoT-Connectvity-by-nodejs-server#readme"
+  "homepage": "https://Smart-Cloth-Health-Monitoring-with-IoT-Connectvity-by-nodejs-server#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
