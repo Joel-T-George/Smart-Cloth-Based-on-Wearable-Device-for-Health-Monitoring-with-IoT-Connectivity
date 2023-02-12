@@ -9,10 +9,7 @@ const PORT = 9000;
 
 wss = new WebSocket.Server({port: 9000, host:'192.168.137.1'})
 
-router.get("/Dashboard", function(req, res){
-    res.send("dashborad");
 
-})
 
 
 router.get("/", function(req,res){
@@ -29,6 +26,9 @@ wss.on("connection", function (ws){
     ws.send("funny")
     
 })
+
+
+
 server.use("/",router)
 server.listen(PORT, function(){
     console.log("running on 9000")
