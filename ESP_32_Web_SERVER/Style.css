@@ -1,0 +1,254 @@
+* {
+    margin: 0px;
+    font-family: cursive;
+    padding: 0px;
+}
+
+
+header {
+    background-color: #1fd3f3;
+    position: fixed;
+    top: 0em;
+    width: 100vw;
+    height: 3.7rem;
+    justify-content: space-evenly;
+    display: flex;
+    padding: 0.5em;
+    min-height: fit-content;
+    box-shadow: 1px 7px 14px rgb(0 0 0 / 20%);
+
+}
+
+.nav  {
+    margin: 0%;
+    display: inline;
+    
+    max-width: 100vw;
+}
+ul.nav-container {
+    padding-top: 0.6em
+}
+h1.nav-title {
+    margin-top: 0.2em;
+    color: #fff;
+    text-shadow: 0px 2px 3px black;
+}
+h1.nav-title:hover {
+    margin-top: 0.2em;
+    color: #fff;
+    text-shadow: 0px 1px 2px black;
+}
+
+.nav-items{
+
+    display: inline;
+    margin: 1em;
+
+}
+li.nav-items a{
+    text-decoration: none;
+    font-size: clamp(1.4em + 0.3px, 0.5em, 4em);
+    text-shadow: -1px 3px 5px black;
+    color: #fff;
+
+}
+
+li.nav-items  :hover {
+    color: #000000;
+    text-shadow: 0px 2px 3px black;
+}
+.nav-items{
+
+    display: inline;
+    margin: 1em;
+
+}
+button.nav-items {
+    width: 6em;
+    height: 3em;
+    margin: 0px;
+    margin-left: 3em;
+    padding: 0px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: none;
+    background-color: #fff;
+    border-radius: 0.9em;
+    box-shadow:1px 4px 8px 0px rgb(0 0 0 / 40%);
+}
+button.nav-items:hover {
+
+    box-shadow:1px 4px 8px 0px rgb(0 0 0 / 8%);
+
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+.wifi-container {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    
+}
+.wifi-credentials {
+    width: 40%;
+    height: 100%;
+    padding: 0.4em;
+    margin: 0.2em;
+    border: 2px solid #1fd3f3;
+    border-radius: 0.3em;
+    box-shadow:1px 4px 8px 0px rgb(0 0 0 / 25%);
+
+    
+}
+.wifi-credentials input[type="text"], input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.5em;
+    padding: 0.3em;
+}
+.wifi-credentials input:disabled {
+    background-color: #cecfd03b;
+    border: 1px solid #790cdd61;
+    box-shadow: 1px 1px 5px 0px rgb(0 0 0 / 20%);
+}
+.wifi-credentials button {
+    
+    width: 6em;
+    height: 3em;
+    margin: 0.4em;
+    padding: 0px;
+    font-size: 0.9em;
+    border: none;
+    font-weight: bold;
+    background-color: #3e45c5a1;
+    color:#fff;
+    border-radius: 0.9em;
+    
+    box-shadow:1px 4px 8px 0px rgb(0 0 0 / 40%);
+
+}
+.wifi-credentials button:hover {
+    background-color: #101570;
+    box-shadow:1px 2px 4px 0px rgb(0 0 0 / 20%);
+}
+#infoBtn {
+    border-radius: 2em;
+}
+.network-scan {
+    margin: 1.1em;
+    width: 100%;
+    height: 100%;
+    color:#0d1161;
+}
+.networks-status {
+    width: 100%;
+    display: inline-flex;
+    
+}
+.networks-status h3 {
+    margin: 0%;
+}
+.networks-status span {
+    font-size: 0.9em;
+    margin-left: 50%;
+
+}
+.network-channel {
+    
+    display: inline-flex;
+    border: 1px solid #3e45c5a1;
+    margin: 0.2em;
+    width: 98%;
+    height: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.secure-status {
+    width: 16px; 
+    height: 16px; 
+    background-color: brown;
+}
+.signal-strength {
+    width: 16px; 
+    height: 16px; 
+    background-color: black;
+}
+.networks-container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 11em;
+}
+.networks-container::-webkit-scrollbar {
+    width: 0.2em
+}
+.networks-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(68, 47, 145, 0.582);
+}
+
+.networks-container::-webkit-scrollbar-thumb {
+    background-color: #3e45c5a1;
+    outline: 1px solid #3e45c5a1;
+}
+.network-channel:hover {
+    background-color: #3e45c5a1 ;
+    box-shadow:1px 2px 8px 0px rgb(0 0 0 / 20%);
+    border: 1px solid #fff;;
+
+}
+
+/* The Close Button */
+.close {
+    color: #fa0909;
+    float: right;
+    top: 2%;
+    left: 96%;
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    padding: 0px 6px 0px 6px;
+}
+
+.close:hover,
+.close:focus {
+color: #fff;
+text-decoration: none;
+background-color: #f7000054;
+cursor: pointer;
+}
+.dashboard-container {
+    background-color: #d67d7d;
+    width: 100vw;
+    height:  88.5vh;
+    display: flex;
+    margin-top: 4.71rem;
+}
+.dashboard-col-1 {
+    background-color: #2baf5e;
+    width: 70%;
+    height: 100%;
+}
+.dashboard-col-2 {
+    background-color: #8b8124;
+    width: 30%;
+    height: 100%;
+}
