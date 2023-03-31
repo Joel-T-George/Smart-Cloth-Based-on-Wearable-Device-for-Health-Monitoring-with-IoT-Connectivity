@@ -221,7 +221,7 @@ button.nav-items:hover {
     color: #fa0909;
     float: right;
     top: 2%;
-    left: 96%;
+    left: 94%;
     font-size: 2em;
     font-weight: bold;
     position: absolute;
@@ -235,20 +235,197 @@ text-decoration: none;
 background-color: #f7000054;
 cursor: pointer;
 }
+
+/* Monitoring Section */
 .dashboard-container {
-    background-color: #d67d7d;
+    background-color: #fff;
     width: 100vw;
     height:  88.5vh;
     display: flex;
-    margin-top: 4.71rem;
+    margin-top: 4.76rem;
 }
 .dashboard-col-1 {
-    background-color: #2baf5e;
+    
     width: 70%;
     height: 100%;
 }
 .dashboard-col-2 {
-    background-color: #8b8124;
+   
     width: 30%;
     height: 100%;
+    
+}
+.Graph-viewer {
+    width: 100%;
+    height: 70%;
+    margin-left: 0.5rem;
+    background-color: #fff;
+}
+.othersensor-container {
+    width: 100%;
+    height: 20%;
+    justify-content: space-evenly;
+    display: inline-flex;
+    text-decoration: none;
+}
+.Sensor-items {
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 1em; 
+    align-items: center;
+    box-shadow:1px 2px 8px 0px rgb(0 0 0 / 40%);
+    border-radius: 1em;
+    border: 2px solid #3e45c5a1;
+
+}
+.Sensor-items:hover {
+     
+    box-shadow:1px 1px 4px 0px rgb(0 0 0 / 20%);
+}
+.Sensor {
+    display: block;
+    margin: auto;
+    align-self: center;
+
+}
+.Sensor:hover{
+    background-color: #13afcabd;
+}
+.Sensor p {
+    margin: 0.03em;
+    font-size: clamp(0.9em + 0.2px, 0.3em, 2em);
+    
+}
+.Sensor h1 {
+    font-size: xx-large;
+}
+.Sensor-ECG {
+    background-color: #fefefe;
+    width: 96%;
+    height: 94%;
+    margin: 0.5em;
+    border: 2px solid #3e45c5a1;
+    border-radius: 0.5em;
+    box-shadow:1px 2px 8px 0px rgb(0 0 0 / 40%);
+}
+.sensorcontent {
+    display: inline-flex;
+    width: 100%;
+    height: 25em;
+
+}
+.modal-Graph-viewer {
+   
+    width: 80%;
+    border: 2px solid #3e45c5a1 ;
+    height: auto;
+    border-radius: 1em;
+    margin: 0.5em;
+    box-shadow:1px 2px 8px 0px rgb(0 0 0 / 40%); 
+    
+}
+.sensor-content {
+    background-color: #b9f2fce8;
+    width: 30%;
+    height: auto;
+    margin: 0.5em;
+    padding: 0.2em;
+    border: 2px solid #3b44eec9 ;
+    border-radius: 2em;
+    box-shadow:1px 2px 8px 0px rgb(0 0 0 / 40%);   
+}
+.sensor-content h1 {
+    margin: 2rem;
+
+}
+.sensor-content div {
+   
+    font-size: 4em;
+    margin: 1em;
+}
+.message-notification {
+    width: 90%;
+    height: 15%;
+    font-size: 1em;
+    margin: 0.4em;
+    padding: 0.1em;
+    border: 2px solid #0713f1a1;
+    border-radius: 0.3em;
+    box-shadow:1px 2px 8px 0px rgb(0 0 0 / 60%);
+}
+.current-network {
+    width: 90%;
+    height: 17%;
+    margin: 0.4em;
+    padding: 0.1em;
+    border: 2px solid #1fd3f3;
+   
+   
+    border-radius: 0.3em;
+    box-shadow:1px 2px 8px 0px rgb(0 0 0 / 60%);
+
+}
+.current-network h3 {
+    width: 95%;
+    margin: 0.2em;
+    
+    padding: 0.3em;
+    border: 1px solid #101570 ;
+    border-radius: 0.2em;
+    background-color: #d86dee;
+    box-shadow:1px 1px 8px 0px rgb(0 0 0 / 35%);
+}
+.current-network h4 {
+    width: 92%;
+    margin: 0.3em;
+    padding-left: 1.1em;
+    border-radius: 0.1em;
+    background-color: #47dd2959;
+}
+.server-info {
+    width: 90%;
+    height: 25%;    
+    margin: 0.4em;
+    padding: 0.1em;
+    border: 2px solid #0713f1a1;
+    border-radius: 0.3em;
+    box-shadow:1px 2px 8px 0px rgb(0 0 0 / 60%);
+
+}
+.server-info h4 {
+    background-color: #1917968c;
+    color:#fff;
+    border-radius: 0.3em;
+    padding:0.5em ;
+    margin: 0.1em;
+    box-shadow:1px 2px 8px 0px rgb(0 0 0 / 20%);
+
+
+}
+.server-info h3 {
+    background-color: #1e0a91d0;
+    border-radius: 0.3em;
+    color:#fff;
+    padding:0.5em ;
+    margin: 0.1em;
+    box-shadow:1px 2px 8px 0px rgb(0 0 0 / 20%);
+
+
+}
+.motor-control {
+    width: 90%;
+    height: 20%;
+    margin: 0.4em;
+    padding: 0.1em;
+    border: 2px solid #1fd3f3;
+    border-radius: 0.3em;
+    box-shadow:1px 2px 8px 0px rgb(0 0 0 / 60%);
+
+}
+.motor-control input[type="range"] {
+    width: 95%;
+    padding: 0.3em;
+    box-shadow: 1px 2px 6px 0px rgb(0 0 0 / 20%);
 }
