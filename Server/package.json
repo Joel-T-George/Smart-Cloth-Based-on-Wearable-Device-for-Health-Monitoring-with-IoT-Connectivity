@@ -25,6 +25,6 @@
   "homepage": "https://Smart-Cloth-Health-Monitoring-with-IoT-Connectvity-by-nodejs-server#readme",
   "dependencies": {
     "express": "^4.19.2",
-    "ws": "^8.12.0"
+    "ws": "^8.17.1"
   }
 }
